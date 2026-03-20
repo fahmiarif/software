@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Link Developer</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: #121f34;
+        --text: #e7ecf5;
+        --muted: #8da0ba;
+        --accent: #7f5af0;
+        --accent2: #7ee7fd;
+        --shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, "Segoe UI", Roboto, sans-serif;
+        background: radial-gradient(circle at top, #17223a 0%, var(--bg) 55%);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+      }
+      .container {
+        width: min(100%, 420px);
+        background: linear-gradient(145deg, #1f2c44, #111a2f);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+      .hero {
+        padding: 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #7f5af0, #50d2ff);
+        display: grid;
+        place-items: center;
+        font-size: 28px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 14px;
+      }
+      .name {
+        font-size: 1.45rem;
+        font-weight: 700;
+        margin: 0;
+      }
+      .role {
+        color: var(--muted);
+        margin: 4px 0 0;
+        font-size: .95rem;
+      }
+      .bio {
+        margin: 12px 0 0;
+        color: #bbcade;
+        font-size: .92rem;
+        line-height: 1.5;
+      }
+      .links { padding: 14px 16px 20px; display: grid; gap: 12px; }
+      .link-card {
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        padding: 13px 16px;
+        text-decoration: none;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+      }
+      .link-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(126, 231, 253, 0.45);
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+      }
+      .link-card span { font-size: .9rem; color: var(--muted); }
+      .link-title { font-weight: 600; font-size: 1rem; }
+      .tag { background: rgba(127, 90, 240, 0.2); border-radius: 8px; padding: 2px 8px; color: #bfbcf3; font-size: .75rem; }
+      .footer { text-align: center; font-size: .75rem; color: #72819d; padding: 12px 10px 16px; }
+    </style>
+  </head>
+  <body>
+    <main class="container" aria-label="Bio link profile">
+      <section class="hero">
+        <div class="avatar" aria-hidden="true">D</div>
+        <h1 class="name">Developer Profi</h1>
+        <p class="role">Fullstack Developer & UI/UX Enthusiast</p>
+        <p class="bio">Koleksi aplikasi terbaik: Point of Sale parfum, Laundry, dan AI Marketing. Klik link di bawah untuk demo langsung dan fitur unggulan.</p>
+      </section>
+      <section class="links">
+        <a class="link-card" href="https://parfume.my.id" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="link-title">Aplikasi POS Toko Parfum</div>
+            <span>Kelola stok, penjualan & laporan harian.</span>
+          </div>
+          <span class="tag">POS</span>
+        </a>
+        <a class="link-card" href="https://laundriaja.my.id" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="link-title">Aplikasi Laundry</div>
+            <span>Reservasi, manajemen order, dan notifikasi realtime.</span>
+          </div>
+          <span class="tag">Laundry</span>
+        </a>
+        <a class="link-card" href="https://ai-marketing.my.id" target="_blank" rel="noopener noreferrer">
+          <div>
+            <div class="link-title">Aplikasi AI Marketing</div>
+            <span>Optimalkan kampanye dengan analisis otomatis.</span>
+          </div>
+          <span class="tag">AI Marketing</span>
+        </a>
+      </section>
+      <div class="footer">✨ Kunjungi semua & pilih yang sesuai kebutuhanmu.</div>
+    </main>
+  </body>
+</html>
